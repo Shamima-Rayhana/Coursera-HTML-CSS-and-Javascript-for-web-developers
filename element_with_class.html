@@ -4,12 +4,13 @@
 		<meta charset="utf-8">
 		<title>Heading elements</title>
 		<style>
-			/* all with class highlight*/
-			.highlight{
+			/* article element is direct child of section*/
+			section>article{
 				background-color: green;
+				font-size:30px;
 			}
-			/*all p with class highlight*/
-			p.highlight{
+			/* h2 element is direct child of section*/
+			section>h2{
 				font-style: italic;
 
 			}
@@ -21,8 +22,18 @@
 		</style>
 	</head>
 	<body>
-		<h1 class="highlight">class element</h1>
-		<p>Click the “Save Note” button below the lecture when you want to capture a screen. You can also highlight and save lines from the transcript below. Add your own notes to anything you’ve captured.</p>
+		<h1>Child selector</h1>
+		<section>
+			<h2>sunheading 1</h2>
+			<div>
+				<article>article-div-section</article>
+			</div>
+		</section>
+		<section>
+			
+			<article>article-div-section</article>
+		</section>
+		<h2>sunheading 2</h2>
 		<p class="highlight">You can also highlight and save lines from the transcript below</p>
 		<div class="highlight mainpoint">Add your own notes to anything you’ve captured.</div>
 	</body>
